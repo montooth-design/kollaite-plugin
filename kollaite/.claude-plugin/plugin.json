@@ -1,0 +1,24 @@
+{
+  "name": "kollaite",
+  "displayName": "Kollaite",
+  "version": "0.1.0",
+  "description": "Pick up approved Kollaite plans, report task progress and usage, and submit the pull request",
+  "author": { "name": "Montooth Design", "url": "https://montoothdesign.com" },
+  "license": "MIT",
+  "keywords": ["kollaite", "planning", "factory", "mcp"],
+  "userConfig": {
+    "server_url": {
+      "type": "string",
+      "title": "Kollaite MCP server",
+      "description": "From Kollaite: Settings › Developer (ends in /api/mcp)",
+      "required": true
+    },
+    "token": {
+      "type": "string",
+      "title": "Personal access token",
+      "description": "From Kollaite: Settings › Developer › New token (starts with klt_)",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "kollaite",
+  "description": "Kollaite for Claude Code: pick up approved plans and hand back the pull request",
+  "owner": { "name": "Montooth Design", "url": "https://montoothdesign.com" },
+  "plugins": [
+    {
+      "name": "kollaite",
+      "source": "./kollaite",
+      "description": "Pick up approved Kollaite plans, report task progress and usage, and submit the pull request"
+    }
+  ]
+}

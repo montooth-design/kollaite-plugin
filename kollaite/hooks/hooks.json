@@ -1,0 +1,17 @@
+{
+  "description": "Report the session's token totals to the Kollaite plan it worked on",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/report-usage.mjs\"",
+            "async": true,
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}
