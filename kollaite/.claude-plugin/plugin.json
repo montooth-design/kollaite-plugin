@@ -1,7 +1,7 @@
 {
   "name": "kollaite",
   "displayName": "Kollaite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pick up approved Kollaite plans, report task progress and usage, and submit the pull request",
   "author": { "name": "Montooth Design", "url": "https://montoothdesign.com" },
   "license": "MIT",

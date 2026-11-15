@@ -14,7 +14,7 @@ The plan was written and approved by the team in Kollaite (request, brief, tech 
 ## 1. Read it
 - No plan given: call `list_work` and ask the engineer which one.
 - Call `get_plan`. Read every document, the tasks and the discussion. If it has a **prototype branch**, that's what the requester means: make it production-ready, don't start over.
-- Tell the engineer in a few lines what you're about to build, which tasks are the Factory's (yours) and which belong to people, and anything unclear. Wait for their go-ahead.
+- Tell the engineer in a few lines what you're about to build, which tasks are the Factory's (yours) and which belong to people, and anything unclear. If the plan is big (many tasks) and the session runs on Opus, mention that Sonnet (`/model sonnet`) uses less of a Claude plan's limit. Wait for their go-ahead.
 
 ## 2. Pick it up
 - Call `start_plan`. It marks the plan theirs in Kollaite and creates its branch (`kollaite/plan-<n>` or `kollaite/plan-<n>-epic-<k>`).

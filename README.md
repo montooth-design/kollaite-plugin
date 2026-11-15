@@ -23,9 +23,13 @@ It asks for two values from Kollaite's **Settings › Developer**: the **MCP ser
 
 Or just ask: "what's ready in Kollaite?", "pick up plan 12".
 
+## Your Claude plan
+
+The plugin runs in your own Claude Code, so building a plan uses your Claude plan (Pro or Max) or your own API key. Kollaite never charges for it. Building a whole plan is a lot of work for the agent: on Pro it can reach your usage limit, so for big plans use Max, or Sonnet (`/model sonnet`), which goes further than Opus.
+
 ## What it sends
 
 - Everything the tools do, as you: picking up a plan, task status, questions and replies in the plan's discussion, the pull request URL.
-- After each reply, in sessions that worked on a plan: the session's token counts per model, so the plan shows its engineering cost. No prompts, code or file names.
+- After each reply, in sessions that worked on a plan: the session's token counts per plan and model, and whether it ran on a Claude plan or an API key, so each plan shows its engineering usage (tokens on a Claude plan, the estimated cost on an API key). No prompts, code or file names.
 
 Works in other MCP clients (Cursor, Codex) too: add the MCP server with the header `Authorization: Bearer <token>`. The skills are Claude Code only.
